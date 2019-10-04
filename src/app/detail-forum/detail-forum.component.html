@@ -1,0 +1,21 @@
+<div *ngIf="forum" class="details">
+    <a routerLink="" >retour</a>
+    <h2>{{forum.Sujet | uppercase}} :</h2>
+    <div>Date de publication: {{forum.DatePublication}}</div>
+    <div>
+        Popularite: {{forum.Popularite}}
+    </div>
+    <div class="liste">
+        <ul >
+            <li class="elem"     *ngFor="let message of messagesForum" style="list-style-type: none;background-color: white;color: black;">
+                <p>{{message.TexteMessage}}</p>
+                <a routerLink="/detailAuteur/{{message.IdAuteur}}" >
+                    <p style="text-align: right;">auteur: {{message.PseudoUtilisateur}}</p>
+                </a>
+                <p style="text-align: right;">Date de création: {{message.DatePublication}}</p>
+                <p style="text-align: right;">Popularité: {{message.Popularite}}</p>
+            </li>
+        </ul>
+    </div>
+   
+  </div>

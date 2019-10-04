@@ -1,0 +1,49 @@
+body{
+    overflow: hidden;
+}    
+    
+
+
+@keyframes slide{ 
+  from {
+    margin-left:3000px;
+  }
+  to
+  {
+    margin-left:0px;
+  } 
+}
+  
+
+@keyframes slidedown{
+    from {
+        opacity : 0;
+    }
+        
+    to {
+        opacity: 1;
+    }
+        
+}
+    
+
+.liste{
+    overflow:auto;
+    font-size:10px;
+    opacity:0;
+    animation: 1s ease forwards slidedown;
+    animation-delay: 1s;
+    margin:50px;
+    padding:20px;
+    
+
+}    
+    
+.details{
+    animation: 1s ease forwards slide;
+}
+
+.elem{
+    box-shadow: 0 3px 6px rgb(255, 255, 255), 0 3px 6px rgba(0,0,0,0.23);
+}
+

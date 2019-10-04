@@ -1,0 +1,11 @@
+<div>
+    <p>inscription</p><br>
+        <form #inscription="ngForm" (ngSubmit)="inscrire(inscription.value)">
+        <input name="nom" type="text" placeholder="nom" ngModel/><br>
+        <input name="prenom" type="text" placeholder="prenom" ngModel/><br>
+        <input name="pseudo" type="text" placeholder="pseudo" ngModel><br>
+        <input name="mail" type="email" placeholder="email" ngModel><br>
+        <input name="mdp" type="password" placeholder="mot de passe" ngModel/><br>
+        <input type="submit" value="valider l'inscription"/>
+    </form>
+</div>

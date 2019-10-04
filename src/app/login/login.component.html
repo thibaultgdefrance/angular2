@@ -1,0 +1,14 @@
+
+<div  style="text-align: end;font-size: 10px">
+    <span *ngIf="utilisateur" style="color:white;margin-right: 20px;">Bonjour {{utilisateur.Pseudo}}</span>
+    <form style="text-align:end;margin-right:50px;display: inline;  ">
+        <input #mail type="text" placeholder="email" >
+        <input #mdp type="text" placeholder="mot de passe" >
+        <button type="button" (click)="Connexion(mail.value,mdp.value)">se connecter</button>
+        <a routerLink="inscription">s'inscrire</a>
+    </form>
+</div>
+
+
+
+

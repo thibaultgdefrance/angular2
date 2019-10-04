@@ -1,0 +1,42 @@
+body{
+    font-family:'enluminures', Arial, sans-serif;
+    background-image : radial-gradient(circle, #00ff85, #00fb96, #00f6a5, #00f1b2, #12ebbc);
+    color: white;
+    text-shadow:2px 4px 3px rgba(0,0,0,0.3);
+}
+    
+
+@font-face {
+    font-family: 'fabfelt';
+    src: url('./FabfeltScript-Bold/FabfeltScript-Bold/webfont/fabfeltscript-bold.eot') format('eot'),
+         url('./FabfeltScript-Bold/FabfeltScript-Bold/webfont/fabfeltscript-bold.woff') format('woff'),
+         url('./FabfeltScript-Bold/FabfeltScript-Bold/webfont/fabfeltscript-bold.ttf') format('truetype'),
+         url('./FabfeltScript-Bold/FabfeltScript-Bold/webfont/fabfeltscript-bold.svg') format('svg');
+}
+
+@font-face {
+    font-family: 'exotica';
+    src:url('./exotica-fontfacekit/web fonts/exotica_medium_macroman/Exotica-webfont.eot') format('eot'),
+    url('./exotica-fontfacekit/web fonts/exotica_medium_macroman/Exotica-webfont.woff') format('woff'),
+    url('./exotica-fontfacekit/web fonts/exotica_medium_macroman/Exotica-webfont.svg') format('svg'),
+    url('./exotica-fontfacekit/web fonts/exotica_medium_macroman/Exotica-webfont.ttf') format('truetype');
+    
+         
+}
+@font-face {
+    font-family: 'enluminures';
+    src:url('./Teutonic-No1-fontfacekit/web fonts/teutonicno1_demibold_macroman/teutonic1-webfont.eot') format('eot'),
+    url('./Teutonic-No1-fontfacekit/web fonts/teutonicno1_demibold_macroman/teutonic1-webfont.woff') format('woff'),
+    url('./Teutonic-No1-fontfacekit/web fonts/teutonicno1_demibold_macroman/teutonic1-webfont.svg') format('svg'),
+   
+    
+         
+}
+
+
+
+  
+h1{
+    
+}
+    

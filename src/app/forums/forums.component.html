@@ -1,0 +1,13 @@
+<div>
+    <h2 style="text-align: center">Liste des Forums:</h2>
+    <ul>
+        
+
+        
+            <li style="text-align: center;list-style-type: none;" *ngFor="let forum of listeForums">
+                    <a routerLink="/detail/{{forum.IdForum}}">{{forum.Sujet}}</a>
+            </li>
+        
+    </ul>
+</div>
+
