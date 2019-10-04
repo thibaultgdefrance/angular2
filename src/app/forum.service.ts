@@ -12,6 +12,7 @@ import{Message} from './message';
   providedIn: 'root'
 })
 export class ForumService {
+  
   getForums():Observable<Forum[]>{
     
     return this.http.get<Forum[]>("http://10.115.145.6/api/Forums?crunch=true");
@@ -22,6 +23,10 @@ export class ForumService {
   }
   getMessagesForum(id:number):Observable<Message[]>{
     return this.http.get<Message[]>("http://10.115.145.6/api/Messages?IdForum="+id+"&sandwich=true")
+  }
+  postMessage(id):Observable<Message>{
+   
+    return this.http.post<Message>("","");
   }
   constructor(private http: HttpClient) { 
     

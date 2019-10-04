@@ -5,6 +5,10 @@
     <div>
         Popularite: {{forum.Popularite}}
     </div>
+    <form #ajoutMessage="ngForm" (ngSubmit)="ajoutMessage(ajoutMessage.value)">
+        <input name="textePost" type="textarea" placeholder="entrez votre texte"/>
+        <input type="submit" value="envoyer message"/>
+    </form>
     <div class="liste">
         <ul >
             <li class="elem"     *ngFor="let message of messagesForum" style="list-style-type: none;background-color: white;color: black;">

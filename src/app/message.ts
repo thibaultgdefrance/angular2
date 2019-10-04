@@ -1,5 +1,5 @@
 export class Message{
-    Id:string;
+    //Id:string;
     IdMessage:string;
     TitreForum:string;
     PseudoUtilisateur:string;

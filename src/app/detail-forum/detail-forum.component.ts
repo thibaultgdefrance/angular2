@@ -11,6 +11,7 @@ import { Message } from '../message';
 export class DetailForumComponent implements OnInit {
   @Input() forum:Forum;
   messagesForum:Message[];
+  message:Message=new Message();
   constructor( private route: ActivatedRoute,
     private forumService: ForumService) { }
 
@@ -22,5 +23,15 @@ export class DetailForumComponent implements OnInit {
     this.forumService.getForum(id)
       .subscribe(forum => this.forum = forum);
     this.forumService.getMessagesForum(id).subscribe(messagesForum=>this.messagesForum=messagesForum);
+  }
+  ajoutMessage(formData):void{
+    const id = +this.route.snapshot.paramMap.get('id');
+    this.message.TexteMessage=formData.textePost;
+    this.message.IdMessage="";
+    this.message.DatePublication="";
+    this.message.Popularite="";
+    this.message.CheminAvatar="";
+    this.message.IdAuteur="1";
+    this.forumService.postMessage(id);
   }
 }
